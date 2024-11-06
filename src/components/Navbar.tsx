@@ -9,7 +9,6 @@ import Link from "next/link";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const toggleNav = () => {
-    console.log(nav);
     setNav(!nav);
   };
   const closeNav = () => {
@@ -24,11 +23,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="pt-4 px-4 flex justify-center gap-x-32 items-center">
+    <nav className="pt-1 pb-4 px-4 md:pb-0 flex justify-between md:justify-center gap-x-32 items-center">
       <Image
         src={logo}
         alt="logo"
         className="w-[150px] h-[80px] mr-[100px] md:w-[150px] md:h-[80px] md:mr-0 object-contain cursor-pointer"
+        priority
       />
       <div>
         <div className="hidden md:flex items-center mx-auto max-w-[800px]">
@@ -49,13 +49,13 @@ const Navbar = () => {
         </div>
         <div
           onClick={toggleNav}
-          className="md:hidden absolute top-5 right-3 border-2 rounded p-2 z-50 bg-gray-50"
+          className="md:hidden absolute top-5 right-8 border-2 rounded p-2 z-50 bg-gray-50"
         >
           {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} />}
         </div>
         {nav && (
-          <div className="fixed left-0 top-0 w-full z-40 border-b-2">
-            <ul className="text-2xl my-24 text-center space-y-8 px-4">
+          <div className="fixed left-0 top-0 w-full z-40">
+            <ul className="text-2xl my-24 text-center space-y-8 px-4 bg-white py-8">
               {navLinks.map((link, i) => (
                 <li key={i}>
                   <Link href={link.path} onClick={closeNav}>

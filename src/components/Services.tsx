@@ -1,7 +1,7 @@
-import { PiPaintBrushBroad } from "react-icons/pi";
+import { PiCalculatorThin, PiPaintBrushBroad } from "react-icons/pi";
 import { LuMonitor } from "react-icons/lu";
-import folder from "@/assets/Subtract.png";
 import ServicesFolder from "./home/ServicesFolder";
+import { CiDiscount1 } from "react-icons/ci";
 
 const ServicesFolderContent = [
   {
@@ -16,11 +16,23 @@ const ServicesFolderContent = [
     description:
       "Tentukan kebutuhan perjalanan umroh Anda. Nikmati pilihan fasilitas yang dapat dikustomisasi.",
   },
+  {
+    icon: CiDiscount1,
+    title: "Umroh Freshnel",
+    description:
+      "Nikmati penawaran eksklusif promo tiket pesawat untuk perjalanan yang lebih hemat.",
+  },
+  {
+    icon: PiCalculatorThin,
+    title: "Kalkulator Trip",
+    description:
+      "Nikmati fitur untuk mempermudah dalam memperkirakan biaya perjalanan",
+  },
 ];
 
 const Services = () => {
   return (
-    <div className="w-full p-12 md:px-64">
+    <div className="w-full py-8 px-4 md:px-64">
       <div className="flex flex-col items-center gap-20">
         {/* Header Section */}
         <div className="flex flex-col items-center gap-4">
@@ -40,7 +52,7 @@ const Services = () => {
               aman dan nyaman.
             </p>
           </div>
-          <div className="w-full flex flex-col gap-y-12">
+          <div className="w-full flex flex-col md:flex-row gap-12">
             {ServicesFolderContent.map((content, i) => (
               <ServicesFolder
                 key={i}

@@ -1,6 +1,6 @@
 import { PiCalculatorThin, PiPaintBrushBroad } from "react-icons/pi";
 import { LuMonitor } from "react-icons/lu";
-import ServicesFolder from "./home/ServicesFolder";
+import ServicesFolder from "./ServicesFolder";
 import { CiDiscount1 } from "react-icons/ci";
 
 const ServicesFolderContent = [

@@ -2,6 +2,7 @@ import { PiCalculatorThin, PiPaintBrushBroad } from "react-icons/pi";
 import { LuMonitor } from "react-icons/lu";
 import ServicesFolder from "./ServicesFolder";
 import { CiDiscount1 } from "react-icons/ci";
+import GoldSectionHeader from "../GoldSectionHeader";
 
 const ServicesFolderContent = [
   {
@@ -36,11 +37,7 @@ const Services = () => {
       <div className="flex flex-col items-center gap-20">
         {/* Header Section */}
         <div className="flex flex-col items-center gap-4">
-          <div className="px-6 py-2.5 rounded-full border border-[#d7af57]">
-            <div className="text-[#d7af57] text-base font-normal font-['Open Sans'] leading-normal">
-              Layanan Kami
-            </div>
-          </div>
+          <GoldSectionHeader title="Layanan Kami"/>
           <div className="flex flex-col items-center gap-6">
             <h2 className="text-center text-[#252525] text-[28px] font-bold font-['Poppins'] leading-[42px]">
               Solusi Digital untuk Perjalanan Ibadah Anda

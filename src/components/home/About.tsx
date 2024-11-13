@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="px-12 py-4 flex flex-col md:flex-row items-center md:justify-center gap-4 mt-12 md:pr-72">
+    <div className="px-12 py-4 flex flex-col md:flex-row items-center md:justify-center gap-4 mt-12 md:pr-72 md:mb-60">
       <div className="flex flex-col gap-4 items-center md:items-start md:w-[600px]">
         <GoldSectionHeader title="Tentang Kami" />
         <div className="flex-col justify-start items-center gap-6 inline-flex">
@@ -28,22 +28,22 @@ const About = () => {
         <div className="w-60 h-44 absolute left-0 top-32 bg-gray-50 rounded-lg overflow-hidden">
           <div className="w-full h-full relative">
             <Image
-              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+              className="absolute inset-0 w-full h-auto object-cover rounded-lg"
               width={320}
               height={176}
               src="https://picsum.photos/800/600"
-              alt="about-up"
+              alt="about-down"
             />
           </div>
         </div>
         <div className="w-60 h-44 absolute right-0 -top-4 bg-gray-50 rounded-lg shadow-md overflow-hidden">
           <div className="w-full h-full relative">
             <Image
-              className="absolute inset-0 w-full h-full object-cover rounded-lg"
-              width={240}
+              className="absolute inset-0 w-full h-auto object-cover rounded-lg"
+              width={320}
               height={176}
               src="https://picsum.photos/800/599"
-              alt="about-down"
+              alt="about-up"
             />
           </div>
         </div>

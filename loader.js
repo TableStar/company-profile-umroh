@@ -13,7 +13,7 @@ const cloudinaryLoader = ({ src, width, quality }) => {
   }
 
   if (isLocal) {
-    return `https://res.cloudinary.com/${cloudName}/image/fetch/cache/w_${width},q_${
+    return `https://res.cloudinary.com/${cloudName}/image/fetch/w_${width},q_${
       quality || 75
     }/${fullSrc}`;
   }

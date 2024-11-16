@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="px-12 py-4 flex flex-col md:flex-row items-center md:justify-center gap-4 mt-12 md:pr-72 md:mb-60">
+    <div className="px-4 md:px-12 py-4 flex flex-col md:flex-row items-center md:justify-center gap-4 mt-12 md:pr-72 md:mb-60">
       <div className="flex flex-col gap-4 items-center md:items-start md:w-[600px]">
         <GoldSectionHeader title="Tentang Kami" />
         <div className="flex-col justify-start items-center gap-6 inline-flex">
-          <div className="self-stretch text-center md:text-left text-neutral-800 text-3xl font-bold font-['Poppins'] leading-10">
+          <div className="self-stretch text-center md:text-left text-neutral-800 text-3xl md:text-6xl font-bold font-['Poppins'] leading-10">
             Memberikan Perjalanan Umroh yang Berkah, Mudah dan Amanah
           </div>
-          <div className="self-stretch text-center md:text-left text-neutral-600 text-base font-normal font-sans leading-normal">
+          <div className="self-stretch text-center md:text-left text-neutral-600 text-base md:text-lg font-normal font-sans leading-normal">
             Syafar Tour adalah agensi tour and travel yang fokus pada pelayanan
             jamaah umroh yang menginginkan perjalanan yang lebih fleksibel. Kami
             sepenuhnya menyadari bahwa setiap jamaah memiliki preferensi
@@ -22,7 +22,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-80 h-72 relative mt-12 md:scale-150 md:origin-top-left">
+      <div className="w-80 h-72 relative mt-12 md:mt-0 md:scale-150 md:origin-top-left">
         <div className="w-60 h-44 absolute right-4 -top-7 rounded-lg shadow-md border border-amber-400" />
         <div className="w-60 h-44 absolute left-4 top-36 rounded-lg shadow-md border border-amber-400" />
         <div className="w-60 h-44 absolute left-0 top-32 bg-gray-50 rounded-lg overflow-hidden">

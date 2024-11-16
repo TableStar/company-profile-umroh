@@ -1,4 +1,3 @@
-import Image from "next/image";
 import GoldSectionHeader from "../GoldSectionHeader";
 import ProductCard from "../ProductCard";
 

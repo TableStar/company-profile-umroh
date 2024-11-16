@@ -1,20 +1,19 @@
 import { FiArrowUpRight } from "react-icons/fi";
-import React from "react";
 import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="px-2">
+    <div className="px-2 md:px-4">
       <div
-        className="w-full bg-cover bg-center rounded-2xl"
+        className="w-full bg-cover bg-center rounded-2xl md:h-[950px]"
         style={{ backgroundImage: `url(https://picsum.photos/1600/900)` }}
       >
-        <div className="backdrop-blur-sm  bg-black/20 text-white w-full h-full p-8 rounded-2xl">
-          <div className="max-w-4xl mx-auto">
+        <div className="backdrop-blur-sm  bg-black/20 text-white w-full h-full p-8 md:py-[100px] rounded-2xl">
+          <div className="max-w-6xl mx-auto md:h-full">
             {/* Hero Content */}
-            <div className="flex flex-col gap-6 md:gap-y-40">
-              <div className="md:w-80">
-                <h1 className="text-[#fbfbfb] text-[32px] font-bold font-['DM Sans'] capitalize leading-[48px]">
+            <div className="flex flex-col gap-6 md:justify-between md:h-full">
+              <div className="md:w-[700px]">
+                <h1 className="text-[#fbfbfb] text-[32px] md:text-6xl font-bold font-['DM Sans'] capitalize leading-[48px]">
                   Raih Ibadah Umroh Impian Anda dengan Mudah
                 </h1>
               </div>

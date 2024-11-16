@@ -11,7 +11,7 @@ const ServicesFolder = ({ Icon, title, description }: Props) => {
   return (
     <div
       className={`h-72 bg-[url('/assets/Subtract.png')] md:hover:bg-[url('/assets/Subtract-brown.png')] bg-contain bg-no-repeat grid grid-cols-[35%_65%] grid-rows-[40%_60%]
-         rounded-3xl mt-8 w-72 md:h-60 md:w-64  hover:text-white `}
+         rounded-3xl mt-8 w-72 md:h-60 md:w-64  md:hover:text-white `}
       // style={{ backgroundImage: `url(${folder.src})` }}
     >
       <div className="p-4 flex justify-center items-center">

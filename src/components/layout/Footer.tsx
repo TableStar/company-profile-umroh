@@ -1,4 +1,3 @@
-import logo from "@/assets/LOGO SYAFAR 1@2x.png";
 import { SiFacebook } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
@@ -13,9 +12,11 @@ const Footer = () => {
         <div className="flex flex-col md:max-w-56 gap-y-10">
           <div className="w-full h-40 overflow-hidden">
             <Image
-              src={logo}
+              src="https://res.cloudinary.com/deoyubp6x/image/upload/v1731773730/LOGO_SYAFAR_1_2x_kuaizl.png"
               alt="Logo"
               className="w-full h-full object-contain"
+              width={240}
+              height={160}
             />
           </div>
           <p className="text-gray-800 text-sm leading-relaxed font-normal md:hidden">

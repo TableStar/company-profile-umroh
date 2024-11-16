@@ -25,9 +25,11 @@ const Navbar = () => {
   return (
     <nav className="pt-1 pb-4 px-4 md:pb-0 flex justify-between md:justify-center gap-x-32 items-center">
       <Image
-        src={logo}
+        src="https://res.cloudinary.com/deoyubp6x/image/upload/v1731773730/LOGO_SYAFAR_1_2x_kuaizl.png"
         alt="logo"
         className="w-[150px] h-[80px] mr-[100px] md:w-[150px] md:h-[80px] md:mr-0 object-contain cursor-pointer"
+        width={150}
+        height={80}
         priority
       />
       <div>

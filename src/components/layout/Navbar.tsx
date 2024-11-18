@@ -16,9 +16,8 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { title: "Home", path: "#home" },
-    { title: "Produk", path: "#produk" },
-    { title: "Kalkulator", path: "#kalkulator" },
+    { title: "Home", path: "/" },
+    { title: "Produk", path: "/produk" },
     { title: "Buah Tangan", path: "#handicraft" },
   ];
 
@@ -53,7 +52,7 @@ const Navbar = () => {
           onClick={toggleNav}
           className="md:hidden absolute top-5 right-8 border-2 rounded p-2 z-50 bg-gray-50"
         >
-          {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} />}
+          {nav ? <AiOutlineClose size={32} /> : <AiOutlineMenu size={32} />}
         </div>
         {nav && (
           <div className="fixed left-0 top-0 w-full z-40">

@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="p-4 md:px-8 md:py-20 flex flex-col gap-y-10 md:items-center">
       <div className="flex flex-col md:flex-row gap-y-10 gap-x-60 md:justify-center">
         <div className="flex flex-col md:max-w-56 gap-y-10">
-          <div className="w-full h-40 overflow-hidden">
+          <div className="w-60 h-40 overflow-hidden mx-auto">
             <Image
               src="https://res.cloudinary.com/deoyubp6x/image/upload/v1731773730/LOGO_SYAFAR_1_2x_kuaizl.png"
               alt="Logo"
@@ -101,7 +101,7 @@ const Footer = () => {
           <h3 className="text-gray-800 text-base font-semibold font-['Open Sans']">
             Metode Pembayaran VA
           </h3>
-          <Image src={"/assets/bank.png"} alt="bank" width={324} height={154} />
+          <Image src={"/assets/bank.png"} alt="bank" width={324} height={154} className="min-w-[324px] h-auto" />
         </div>
       </div>
       <div className="flex flex-col justify-between gap-4 md:w-full md:max-w-[1300px]">

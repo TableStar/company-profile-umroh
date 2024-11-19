@@ -18,6 +18,11 @@ const cloudinaryLoader = ({ src, width, quality }) => {
     }/${fullSrc}`;
   }
 
+  if (src.includes("res.cloudinary")) {
+    const urlParts = src.split("/upload/");
+    return `${urlParts[0]}/upload/w_${width},q_${quality || 75}/${urlParts[1]}`;
+  }
+
   return `https://res.cloudinary.com/${cloudName}/image/fetch/w_${width},q_${
     quality || 75
   }/${src}`;

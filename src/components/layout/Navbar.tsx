@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="pt-1 pb-4 px-4 md:pb-0 flex justify-between md:justify-center gap-x-32 items-center">
+    <nav className="pt-1 pb-4 px-4 md:pb-0 flex justify-between md:justify-center gap-x-32 items-center sticky top-0 z-50 bg-white shadow-sm">
       <Image
         src="https://res.cloudinary.com/deoyubp6x/image/upload/v1731773730/LOGO_SYAFAR_1_2x_kuaizl.png"
         alt="logo"
